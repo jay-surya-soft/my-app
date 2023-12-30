@@ -1,6 +1,6 @@
 name: 🚀 Release preparation.
 description: Schedule a release
-title: '[Release preparation for version]: '
+title: 'Release preparation for version: '
 labels: ['Release']
 body:
   - type: input
