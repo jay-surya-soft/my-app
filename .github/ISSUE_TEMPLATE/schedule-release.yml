@@ -1,0 +1,49 @@
+name: 🚀 Release preparation.
+description: Schedule a release
+title: '[Release preparation for version]: '
+labels: ['Release']
+body:
+  - type: input
+    id: release_date
+    attributes:
+      label: Target release date
+      placeholder: DD/MM/YYYY
+
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Before closing the issue, please make sure you do the following
+      options:
+        - label: All relevant issues and pull requests have been merged.
+        - label: Changelog has been updated with notable features, improvements, and bug fixes.
+        - label: Documentation has been reviewed and updated as needed
+        - label: Code has been thoroughly tested.
+        - label: Build and release process has been verified.
+
+  - type: textarea
+    id: highlights
+    attributes:
+      label: Highlights
+      placeholder: List the most important features, improvements, and bug fixes.
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      placeholder: List specific tasks that need to be completed before the release.
+
+  - type: textarea
+    id: contributors
+    attributes:
+      label: Contributors
+      placeholder: List team members contributing to release.
+
+  - type: textarea
+    id: additional_Notes
+    attributes:
+      label: Additional notes
+      placeholder: Add any other relevant information, such as compatibility considerations, breaking changes, or known issues.
